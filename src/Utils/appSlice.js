@@ -10,7 +10,7 @@ const appSlice = createSlice({
       state.isMenuOpen = !state.isMenuOpen;
     },
     closeMenu: (state) => {
-      state.isMenuOpen = false; //we are hard coding it as we want to collapse the sidebar whenever we load watch page
+      state.isMenuOpen = false; //we are hard coding it as we want to collapse the slidebar whenever we load watch page
     }
   },
 });

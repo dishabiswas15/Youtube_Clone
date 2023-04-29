@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleMenu } from "../Utils/appSlice";
+import { closeMenu, toggleMenu } from "../Utils/appSlice";
 import { YOUTUBE_SEARCHSUGGESTIONS_API } from "../Utils/constants";
 import { cacheResults } from "../Utils/searchSlice";
+import Slidebar from "./Slidebar";
 
 function Head() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -67,7 +68,12 @@ function Head() {
   const toggleMenuHandler = () => {
     dispatch(toggleMenu());
   };
+  
+  useEffect(() => {
+    dispatch(closeMenu());
+  }, []);
   return (
+    <div>
     <div className="grid grid-flow-col p-2 m-2 shadow-md">
       <div className="flex cursor-pointer">
         <img
@@ -119,6 +125,8 @@ function Head() {
           src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"
         />
       </div>
+    </div>
+    <Slidebar/>
     </div>
   );
 }
