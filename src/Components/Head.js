@@ -73,7 +73,7 @@ function Head() {
     dispatch(closeMenu());
   }, []);
   return (
-    <div>
+    <div className="">
     <div className="grid grid-flow-col p-2 m-2 shadow-md">
       <div className="flex cursor-pointer">
         <img
