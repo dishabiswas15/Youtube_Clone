@@ -10,7 +10,7 @@ function VideoSuggestions() {
       {" "}
       {videos.map((videosuggest) => (
         <Link to={"/watch?v=" + videosuggest.id}>
-        <SuggestionCard info={videosuggest}/>
+        <SuggestionCard key={videosuggest.id} info={videosuggest}/>
         </Link>
       ))}
     </div>
