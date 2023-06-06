@@ -12,7 +12,7 @@ function Slidebar() {
   };
   if (!isMenuOpen) return null;
   return (
-    <div className="fixed p-5 top-0 left-0 h-[568px] w-64 bg-white overflow-y-scroll ease-in-out duration-300 ">
+    <div className="fixed p-5 top-0 left-0 h-[568px] w-52 bg-white overflow-y-scroll ease-in-out duration-300 ">
       <div className="flex cursor-pointer">
         <img
           onClick={() => toggleMenuHandler()}
