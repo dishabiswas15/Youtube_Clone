@@ -64,7 +64,7 @@ function ButtonList() {
         />
         <div
           id="slider"
-          className="w-full h-full relative flex items-center overflow-x-scroll scroll-smooth scrollbar-hide"
+          className="w-full h-full z-0 relative flex items-center overflow-x-scroll scroll-smooth scrollbar-hide"
         >
           {Buttons.map((buttons) => (
             <Button info={buttons} />

@@ -108,7 +108,7 @@ function Head() {
             </button>
           </div>
           {showSuggestions && (
-            <div className="absolute bg-white py-2n px-2 w-[26rem] shadow-lg rounded-lg border border-gray-200">
+            <div className="absolute z-10 bg-white py-2n px-2 w-[26rem] shadow-lg rounded-lg border border-gray-200">
               <ul>
                 {suggestions.map((s) => (
                   <li key={s} className="py-2 px-3 shadow-sm hover:bg-gray-100">
